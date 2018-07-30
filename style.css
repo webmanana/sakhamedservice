@@ -81,8 +81,9 @@ header {
 	padding-top: 20px;
 }
 .header_callme {
-    padding: 8px 24px;
-    border: 1px solid #00ac49;
+    padding: 9px 24px;
+	border: 1px solid;
+	border-color: rgba(1, 152, 57, 0.3);
     border-radius: 25px;
     color: #019839;
     display: inline-block;
@@ -285,7 +286,8 @@ ul.hidden-links {
 }
 .category_button {
     color: #019839;
-    border: 1px solid #019839;
+    border: 1px solid;
+	border-color: rgba(1, 152, 57, 0.3);
     border-radius: 25px;
     padding: 10px 22px;
 }
