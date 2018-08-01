@@ -15,7 +15,7 @@ $(document).ready(function(){
 		      }
 		    },
 		    {
-		      breakpoint: 600,
+		      breakpoint: 800,
 		      settings: {
 		        slidesToShow: 2,
 		        slidesToScroll: 2
@@ -49,7 +49,7 @@ $(document).ready(function(){
 		      }
 		    },
 		    {
-		      breakpoint: 600,
+		      breakpoint: 800,
 		      settings: {
 		        slidesToShow: 2,
 		        slidesToScroll: 2
@@ -70,7 +70,7 @@ $(document).ready(function(){
 	$('.partners_slider').slick({
 		infinite: false,
 		slidesToShow: 6,
-		slidesToScroll: 1,
+		slidesToScroll: 3,
 		arrows:false,
 		responsive: [
 		    {
@@ -91,8 +91,8 @@ $(document).ready(function(){
 		    {
 		      breakpoint: 480,
 		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
+		        slidesToShow: 2,
+		        slidesToScroll: 2
 		      }
 		    }
 		    // You can unslick at a given breakpoint now by adding:
