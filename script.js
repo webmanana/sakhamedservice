@@ -101,7 +101,7 @@ $(document).ready(function(){
 		  ]
 	});
 });
-$(function() {
+$(document).ready(function(){
 
   var $nav = $('nav.greedy');
   var $btn = $('nav.greedy button');
@@ -156,4 +156,9 @@ $(function() {
 
   check();
 
+});
+$(document).ready(function(){
+	$( ".toggle-button" ).click(function() {
+  $( ".p" ).toggle();
+});
 });
