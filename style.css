@@ -206,13 +206,34 @@ input[type="text"].search {
 	margin-top: 12px;
 }
 input[type="text"].search:focus:hover {
-}
 
+}
+.search_inner form:before {
+    content: '';
+    height: 12px;
+    width: 100%;
+    display: block;
+    top: 0px;
+    position: absolute;
+    left: 0;
+}
+.search_inner form:after {
+    content: '';
+    height: 12px;
+    width: 100%;
+    display: block;
+    bottom: 0px;
+	position: absolute;
+    left: 0;
+}
 input[type="text"].search:focus {
     width: 100%;
     z-index: 1;
     cursor: text;
     opacity: 1;
+}
+input[type="text"].search:focus ~ form:after{
+	display: none;
 }
 input[type="submit"].search_submit {
     height: 44px;
@@ -233,17 +254,8 @@ input[type="submit"].search_submit {
     border-radius: 34px;
 	margin-top: 12px;
 }
-.search_inner form:before {
-	content: '';
-	height: 12px;
-	width: 100%;
-	display: block;
-}
 input[type="submit"].search_submit:hover {
   opacity: 0.8;
-}
-input[type="text"].search:focus + form {
-	position: relative;
 }
 input[type="submit"].search_submit:focus {
 	outline:none;
@@ -748,6 +760,31 @@ input[type="submit"].search_submit:focus {
 	align-items: center;
 	justify-content: center;
 }
+/* single */
+.single_inner h1 {
+	font-size: 30px;
+	font-weight: 700;
+}
+.single_full {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #eee;
+    margin: 0 auto;
+    max-width: 820px;
+}
+.single_inner h1 {
+	font-size: 30px;
+	font-weight: 700;
+}
+.single_inner h3 {
+	font-size: 24px;
+	margin-top: 10px;
+}
+.single_inner p {
+	font-size: 14px;
+	color: #555555;
+	line-height: 24px;
+	margin-bottom: 24px;
+}
 /* page full */
 #page .breadcrumb a:first-child {
 	margin-left: 0;
@@ -762,6 +799,14 @@ input[type="submit"].search_submit:focus {
 .page_inner h1 {
 	font-size: 30px;
 	font-weight: 700;
+}
+.page_inner h1:after {
+    content: "";
+    width: 60px;
+    height: 5px;
+    background-color: #019839;
+    display: block;
+    margin-top: 16px;
 }
 .page_date {
 	color: #aaa;
@@ -791,15 +836,17 @@ input[type="submit"].search_submit:focus {
 	margin-bottom: 30px;
 }
 .page_full {
-	padding-bottom: 50px;
-	border-bottom: 1px solid #eee;
+    margin: 0 auto;
+    max-width: 820px;
 }
 .page_bottom {
-	padding-top: 30px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
 }
 .back_to_the_future {
     padding: 9px 24px;
@@ -844,6 +891,22 @@ input[type="submit"].search_submit:focus {
 	    width: 100%;
 	    background-size: cover;
 	    background-position: center;
+	}
+	.single_inner h1, .page_inner h1 {
+	    font-size: 24px;
+	}
+	.single_inner p {
+	    margin-bottom: 16px;
+	}
+	.single_inner h3 {
+	    font-size: 20px;
+	}
+	#page .breadcrumb a {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.breadcrumb span {
+	    margin-left: 0;
 	}
 	.main_inner {
 	    padding-top: 35%;
