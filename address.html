@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="foundation/css/foundation.min.css" />
+	<!-- slick -->
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css"href="style.css">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script type="text/javascript" src="maps.js"></script>
+</head>
+
+<body>
+	<div class="wrap">
+		<header>
+			<div class="header_top">
+				<div class="grid-container">
+					<div class="grid-x grid-padding-x">
+						<div class="cell small-9 medium-5 header_logo">
+							<div class="logo">
+								<a href="#">
+									<img src="img/logo.png" alt="">
+								</a>
+							</div>
+							<div class="logo_mobile">
+								<a href="#">
+									<img src="img/logo-mobile.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="cell hide-for-small-only hide-for-medium-only large-5 header_info">
+							<div class="info_inner">
+								<span class="info_top">Главный офис</span>
+								<span class="info_bottom">ул. Курашова, 44</span>
+							</div>
+							<div class="info_inner">
+								<span class="info_top">Контактный телефон</span>
+								<span class="info_bottom">+7 (4112) 43-45-38</span>
+							</div>
+						</div>
+						<div class="cell hide-for-small-only hide-for-medium-only large-2 header_button">
+							<a class="header_callme" href="#">Заказать звонок</a>
+						</div>
+						<div class="cell small-3 medium-7 hide-for-large">
+							<div class="burger">
+								<a href="#" data-toggle="offCanvasLeft1">
+									<img src="img/burger.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="off-canvas-wrapper">
+						    <div class="off-canvas position-right mobile_canvas" id="offCanvasLeft1" data-off-canvas>
+								<ul class="mobile-ofc vertical menu">
+									<li><a class="active" href="#">Главная</a></li>
+									<li><a href="#">О компании</a></li>
+									<li><a href="#">Организациям</a></li>
+									<li><a href="#">Доставка</a></li>
+									<li><a href="#">Магазины</a></li>
+									<li><a href="#">Сервис</a></li>
+									<li><a href="#">Новости и акции</a></li>
+									<li><a href="#">Контакты</a></li>
+									<li class="canvas_text">
+										<span class="canvas_info">Главный офис</span>
+										<span class="canvas_info_bottom">ул. Курашова, 44</span>
+									</li>
+									<li class="canvas_text">
+										<span class="canvas_info">Контактный телефон</span>
+										<span class="canvas_info_bottom">+7 (4112) 43-45-38</span>
+									</li>
+								</ul>
+						    </div>
+					    </div>
+					</div>
+				</div>
+			</div>
+			<div class="header_bottom show-for-large">
+				<div class="grid-container">
+					<div class="grid-x grid-padding-x">
+						<div class="cell medium-12 top_menu">
+							<div class="top_menu_inner">
+								<nav class="topmenu greedy" role="navigation">
+									<ul id="topmenu" class="links">
+										<li><a class="box_menu" href="#"><img src="img/box-menu.png" alt=""></a></li>
+										<li><a href="#">О компании</a></li>
+										<li><a href="#">Организациям</a></li>
+										<li><a href="#">Доставка</a></li>
+										<li><a href="#">Магазины</a></li>
+										<li><a href="#">Сервис</a></li>
+										<li><a href="#">Новости и акции</a></li>
+										<li><a href="#">Контакты</a></li>
+									</ul>
+									<button count="0" class="hidden">...</button>
+								  	<ul class="hidden-links hidden"></ul>
+									<div class="search_inner">
+										<form action="" autocomplete="on">
+											<input class="search" name="search" type="text">
+											<input class="search_submit" value="Rechercher" type="submit">
+										</form>
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="page">
+			<div class="breadcrumb_inner">
+				<div class="grid-container">
+					<div class="grid-x grid-padding-x">
+						<div class="cell medium-12 breadcrumb">
+							<a href="#">Главная</a> -  <span>Адреса магазинов</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page_inner">
+				<div class="grid-container">
+					<div class="grid-x grid-padding-x">
+						<div class="cell medium-12">
+							<h1>Адреса магазинов</h1>
+							<div class="page_content maps_inner">
+								<div id="map"></div>
+								<div id="buttons">
+									<div class="grid-x grid-padding-x">
+										<div id="maps_toggle_1" class="cell medium-6 large-4 maps_block" onclick="setCenter();">
+											<div class="address_block">
+												<span class="address_city">Якутск</span>
+												<span class="address_name">202-й микрорайон, 18/1</span>
+												<span class="address_time_txt">Время работы</span>
+												<span class="address_time">Пн-Пт 9:00 - 20:00, Сб 10:00-15:00</span>
+												<span class="address_tel_txt">Телефон</span>
+												<span class="address_tel">+7 (4112) 43-65-44, 43-76-72</span>
+											</div>
+										</div>
+										<div id="maps_toggle_2" class="cell medium-6 large-4 maps_block" onclick="setBounds();">
+											<div class="address_block">
+												<span class="address_city">Якутск</span>
+												<span class="address_name">Курашова, 44</span>
+												<span class="address_time_txt">Время работы</span>
+												<span class="address_time">Пн-Пт 9:00 - 19:00, Сб 10:00-18:00</span>
+												<span class="address_tel_txt">Телефон</span>
+												<span class="address_tel">+7 (4112) 43-45-38, 43-45-17</span>
+											</div>
+										</div>
+										<div id="maps_toggle_3" class="cell medium-6 large-4 maps_block" onclick="setTypeAndPan();">
+											<div class="address_block">
+												<span class="address_city">Нижни Бестях</span>
+												<span class="address_name">Ленина, 39/1</span>
+												<span class="address_time_txt">Время работы</span>
+												<span class="address_time">Пн-Пт 9:00 - 20:00, Сб 10:00-15:00</span>
+												<span class="address_tel_txt">Телефон</span>
+												<span class="address_tel">+7 (4112) 00-00-00</span>
+											</div>
+										</div>
+									</div>
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			<section id="footer_top">
+				<div class="grid-container">
+					<div class="grid-x grid-padding-x">
+						<div class="cell small-12 medium-5 large-3">
+							<h2 class="footer_logo">Сахамедсервис</h2>
+							<span class="footer_logo_txt">С 1993 года заботимся о здоровье<br> взрослых и детей</span>
+						</div>
+						<div class="cell small-12 medium-7 large-3">
+							<div class="footer_list footer_page_list">
+								<span>Компании</span>
+								<ul>
+									<li><a href="">О компании</a></li>
+									<li><a href="">Организациям</a></li>
+									<li><a href="">Магазины</a></li>
+									<li><a href="">Сервис</a></li>
+									<li><a href="">Новости и акции</a></li>
+									<li><a href="">Контакты</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="cell small-12 medium-3 medium-offset-5 large-offset-0 large-3">
+							<div class="footer_list footer_list_cat">
+								<span>Категории</span>
+								<ul>
+									<li><a href="">Медтехника для дома</a></li>
+									<li><a href="">Уход за больными</a></li>
+									<li><a href="">Для мам и младенцев</a></li>
+									<li><a href="">Тепло и комфорт</a></li>
+									<li><a href="">Медицинская одежда</a></li>
+									<li><a href="">Медтехника</a></li>
+									<li><a href="">Посуда</a></li>
+									<li><a href="">Уход за больными</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="cell small-12 medium-4 large-3">
+							<div class="footer_list">
+								<div class="invisible"></div>
+								<ul>
+									<li><a href="">Медтехника для дома</a></li>
+									<li><a href="">Уход за больными</a></li>
+									<li><a href="">Для мам и младенцев</a></li>
+									<li><a href="">Медтехника</a></li>
+									<li><a href="">Посуда</a></li>
+									<li><a href="">Тепло и комфорт</a></li>
+									<li><a href="">Медицинская одежда</a></li>
+									<li><a href="">Уход за больными</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="footer_bottom">
+				<div class="grid-container">
+					<div class="grid-x grid-padding-x">
+						<div class="cell small-12 medium-4 large-3">
+							<div class="footer_social">
+								<ul>
+									<li><a href=""><img src="img/vk.png" alt=""></a></li>
+									<li><a href=""><img src="img/instagram.png" alt=""></a></li>
+									<li><a href=""><img src="img/twitter.png" alt=""></a></li>
+									<li><a href=""><img src="img/odnoklassniki.png" alt=""></a></li>
+									<li><a href=""><img src="img/facebook.png" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="cell small-12 medium-4 large-6">
+							<div class="footer_copyright">
+								<span>Данный интернет-сайт и материалы, размещенные на нем, носят исключительно информационный характер и ни при каких условиях не являются публичной офертой, определенной положениями статьи 437 Гражданского кодеска РФ</span>
+							</div>
+						</div>
+						<div class="cell small-12 medium-4 large-2 large-offset-1">
+							<div class="footer_autor">
+								<span>Разработка сайтов</span>
+								<a target="_blank" href="http://platforma.bz/">
+									<img src="img/platforma.png" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</footer>
+	</div><!-- wrap -->
+
+	<script src="vendor/jquery.min.js"></script>
+	<script src="foundation/js/vendor/what-input.js"></script>
+	<script src="foundation/js/vendor/foundation.min.js"></script>
+	<script>
+		$(document).foundation();
+	</script>
+	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+	<script src="vendor/jquery.maskedinput.min.js"></script>
+	<!-- <script src="vendor/SearchUIEffects/js/modernizr.custom.js"></script>
+	<script src="vendor/SearchUIEffects/js/classie.js"></script> -->
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
