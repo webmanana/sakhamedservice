@@ -1267,6 +1267,9 @@ input[type="submit"].search_submit:focus {
 	.footer_autor {
 	    top: -128px;
 	}
+	.burger a {
+	    justify-content: flex-end;
+	}
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
 	.links li a {
@@ -1275,6 +1278,9 @@ input[type="submit"].search_submit:focus {
 	    color: #fff;
 	    font-weight: 700;
 	    font-size: 15px;
+	}
+	.burger a {
+	    justify-content: flex-end;
 	}
 	.header_callme {
 	    padding: 9px 14px;
