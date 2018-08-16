@@ -1103,10 +1103,16 @@ input[type="submit"].search_submit:focus {
 	#main_bg {
 	    min-height: 500px;
 	}
+	.burger a {
+		padding: 0;
+	}
 }
 @media screen and (max-width: 500px) and (min-width: 360px) {
 	#main_bg {
 	    min-height: 650px;
+	}
+	.burger a {
+		padding: 0;
 	}
 }
 @media screen and (max-width: 768px) and (min-width: 640px) {
@@ -1121,6 +1127,9 @@ input[type="submit"].search_submit:focus {
 	    width: 100%;
 	    background-size: cover;
 	    background-position: center;
+	}
+	.burger {
+		height: 100%;
 	}
 	.single_inner h1, .page_inner h1 {
 	    font-size: 24px;
