@@ -71,7 +71,12 @@ blockquote p {
 	display: block;
 	margin-top: 16px;
 }
-
+body.is-reveal-open {
+overflow: visible!important;
+}
+.reveal-overlay {
+overflow-y: hidden!important;
+}
 /* header */
 header {
 
@@ -167,21 +172,22 @@ header {
     background-color: #019839;
     color: #fff;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     border: none;
-    padding: 15px 30px;
+    padding: 12px 30px;
     cursor: pointer;
+	border-radius: 20px;
 }
 .modal_button input[type=submit]:hover {
     background-color: #018130;
 }
 .modal_button {
-	display: flex;
-     justify-content: space-between;
-     align-items: center;
-     flex-wrap: wrap;
-     align-content: space-between;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 .modal_button a {
 	color: #019839;
