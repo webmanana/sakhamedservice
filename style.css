@@ -14,8 +14,6 @@
 	display: flex;
 	flex-wrap: wrap;
 }
-html {
-}
 body {
 	font-family: "MuseoSansCyrl", sans-serif !important;
 	font-size: 14px;
@@ -32,6 +30,7 @@ a {
 .links li a.active {
 	background-color: #018130;
 }
+
 ul {
 	list-style-type: none;
 	padding: 0;
@@ -116,12 +115,6 @@ header {
 	display: none;
 }
 /* popup */
-body.is-reveal-open {
-overflow: visible!important;
-}
-.reveal-overlay {
-overflow-y: hidden!important;
-}
 .reveal {
 	width: 400px;
 	padding: 0;
@@ -159,14 +152,13 @@ overflow-y: hidden!important;
     display: flex;
     flex-direction: column;
 }
-.modal_input input[type=tel] {
+.modal_input input[type=text] {
     padding: 15px;
     color: #000;
     margin-bottom: 15px;
     font-size: 14px;
     outline-color: #eee;
     border: 1px solid #eee;
-	outline: none;
 }
 .modal-body {
 	padding: 30px;
@@ -175,22 +167,21 @@ overflow-y: hidden!important;
     background-color: #019839;
     color: #fff;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     border: none;
-    padding: 12px 30px;
+    padding: 15px 30px;
     cursor: pointer;
-    border-radius: 20px;
 }
 .modal_button input[type=submit]:hover {
     background-color: #018130;
 }
 .modal_button {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: space-between;
+	display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     align-content: space-between;
 }
 .modal_button a {
 	color: #019839;
@@ -505,12 +496,12 @@ input[type="submit"].search_submit:focus {
 	align-items: flex-start;
 }
 .main_bottom_content span {
-    color: #fff;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 24px;
-    padding-left: 18px;
-    padding-right: 42px;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 24px;
+	padding-left: 18px;
+	padding-right: 65px;
 }
 /* advantage */
 #advantage, #address {
