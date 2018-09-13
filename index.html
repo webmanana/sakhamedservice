@@ -42,7 +42,30 @@
 							</div>
 						</div>
 						<div class="cell hide-for-small-only hide-for-medium-only large-2 header_button">
-							<a class="header_callme" href="#">Заказать звонок</a>
+							<a class="header_callme" data-open="exampleModal1" href="#">Заказать звонок</a>
+							<div class="reveal" id="exampleModal1" data-reveal>
+								<div class="modal-header">
+									<h5>Авторизация</h5>
+								</div>
+								<form class="" action="index.html" method="post">
+									<div class="modal-body">
+										<div class="modal_input">
+											<input type="text" name="" value="" placeholder="Ваш E-Mail" autocomplete="off">
+											<input type="text" name="" value="" placeholder="Пароль">
+										</div>
+										<div class="modal_button">
+											<input type="submit" name="save" value="Войти">
+											<a href="#">Забыли пароль</a>
+										</div>
+									</div>
+								</form>
+								<div class="modal-footer">
+									<a href="#">Я еще не зарегестрировался на сайте</a>
+								</div>
+								<button class="close-button" data-close aria-label="Close modal" type="button">
+  							    	<span aria-hidden="true">&times;</span>
+  							    </button>
+							</div>
 						</div>
 						<div class="cell small-3 medium-7 hide-for-large">
 							<div class="burger">
@@ -83,7 +106,7 @@
 							<div class="top_menu_inner">
 								<nav class="topmenu greedy" role="navigation">
 									<ul id="topmenu" class="links">
-										<li><a class="box_menu" href="#"><img src="img/box-menu.png" alt=""></a></li>
+										<li><a class="box_menu active" href="#"><img src="img/box-menu.png" alt=""></a></li>
 										<li><a href="#">О компании</a></li>
 										<li><a href="#">Организациям</a></li>
 										<li><a href="#">Доставка</a></li>
@@ -96,7 +119,7 @@
 								  	<ul class="hidden-links hidden"></ul>
 									<div class="search_inner">
 										<form action="" autocomplete="on">
-											<input class="search" name="search" type="text">
+											<input class="search" name="search" type="text" autocomplete="off">
 											<input class="search_submit" value="Rechercher" type="submit">
 										</form>
 									</div>
@@ -123,25 +146,25 @@
 						</div>
 						<div class="main_bottom hide-for-small-only">
 							<div class="grid-x grid-padding-x">
-								<div class="cell small-12 medium-4 large-3">
+								<div class="cell small-12 medium-4 large-3 main_bottom_block">
 									<div class="main_bottom_content">
 										<img src="img/block1.png" alt="">
 										<span>Переносные<br> ЭКГ-аппараты</span>
 									</div>
 								</div>
-								<div class="cell small-12 medium-4 large-3">
+								<div class="cell small-12 medium-4 large-3 main_bottom_block">
 									<div class="main_bottom_content">
 										<img src="img/block2.png" alt="">
 										<span>Функциональная<br> диагностика</span>
 									</div>
 								</div>
-								<div class="cell small-12 medium-4 large-3">
+								<div class="cell small-12 medium-4 large-3 main_bottom_block">
 									<div class="main_bottom_content">
 										<img src="img/block3.png" alt="">
 										<span>Офтальмологическое<br> оборудование</span>
 									</div>
 								</div>
-								<div class="cell small-12 large-3 show-for-large">
+								<div class="cell small-12  medium-4 large-3 main_bottom_block">
 									<div class="main_bottom_content">
 										<img src="img/block4.png" alt="">
 										<span>Товары<br> для реабилитации</span>

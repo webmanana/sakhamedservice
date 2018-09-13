@@ -25,6 +25,7 @@ body {
 a {
 	text-decoration: none;
 	color: #000;
+	outline: none;
 }
 ul {
 	list-style-type: none;
@@ -109,6 +110,9 @@ header {
 	display: none;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 1c82850... Revert "Merge branch 'master' of https://github.com/webmanana/sakhamedservice"
 /* popup */
 .reveal {
 	width: 400px;
@@ -162,12 +166,20 @@ header {
     background-color: #019839;
     color: #fff;
     font-weight: 500;
+<<<<<<< HEAD
     font-size: 14px;
     text-align: center;
     border: none;
     padding: 10px 30px;
     cursor: pointer;
     border-radius: 20px;
+=======
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+>>>>>>> parent of 1c82850... Revert "Merge branch 'master' of https://github.com/webmanana/sakhamedservice"
 }
 .modal_button input[type=submit]:hover {
     background-color: #018130;
@@ -186,8 +198,11 @@ header {
 .modal-title {
 	font-size: 24px;
 }
+<<<<<<< HEAD
 =======
 >>>>>>> 1c8285031ba3988af55fb707392013b745cf1d95
+=======
+>>>>>>> parent of 1c82850... Revert "Merge branch 'master' of https://github.com/webmanana/sakhamedservice"
 /* off-canvas */
 .mobile_canvas ul {
 	display: flex;
@@ -252,6 +267,9 @@ header {
 	color: #fff;
 	font-weight: 700;
 	font-size: 15px;
+}
+.links li a.active {
+	background-color: #018130;
 }
 .links li a:hover {
 	background-color: #018130;
@@ -1392,6 +1410,9 @@ input:checked~.switch-paddle {
 	.footer_autor {
 		top: -128px;
 	}
+	.main_bottom_block:last-child {
+		display: none;
+	}
 	.burger a {
 		justify-content: flex-end;
 	}
@@ -1401,9 +1422,9 @@ input:checked~.switch-paddle {
 		padding-right: 0px !important;
 	}
 	.main_bottom {
-    padding-top: 180px;
-    padding-bottom: 28px;
-}
+	    padding-top: 180px;
+	    padding-bottom: 28px;
+	}
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
 	.links li a {
@@ -1413,8 +1434,13 @@ input:checked~.switch-paddle {
 		font-weight: 700;
 		font-size: 15px;
 	}
+<<<<<<< HEAD
 	.main_bottom_content span {
 		padding-right: 0px !important;
+=======
+	.main_bottom_block:last-child {
+		display: none;
+>>>>>>> 587f5621ad88eb147f0ac102dfda55ccf7b983d5
 	}
 	.burger a {
 		justify-content: flex-end;
