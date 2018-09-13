@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$(document).foundation();
 	$('.news_slider').slick({
 		infinite: false,
 		slidesToShow: 3,
