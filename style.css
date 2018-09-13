@@ -1312,6 +1312,9 @@ input:checked~.switch-paddle {
 	.footer_autor {
 		top: -128px;
 	}
+	.main_bottom_block:last-child {
+		display: none;
+	}
 	.burger a {
 		justify-content: flex-end;
 	}
@@ -1331,6 +1334,9 @@ input:checked~.switch-paddle {
 		color: #fff;
 		font-weight: 700;
 		font-size: 15px;
+	}
+	.main_bottom_block:last-child {
+		display: none;
 	}
 	.burger a {
 		justify-content: flex-end;
