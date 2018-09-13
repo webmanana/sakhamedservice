@@ -448,6 +448,7 @@ input[type="submit"].search_submit:focus {
 	font-weight: 300;
 	font-size: 48px;
 	margin-bottom: 84px;
+	font-family: "MuseoSansCyrl", sans-serif !important;
 }
 .main_button {
 	display: flex;
