@@ -84,8 +84,36 @@ overflow: visible!important;
 overflow-y: hidden!important;
 }
 /* header */
-header {
-
+.slider_inner {
+	position: relative;
+	z-index: 10;
+}
+.slider_desc {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 10;
+}
+.owl-carousel {
+	z-index: unset!important;
+}
+.ms-nav-next, .ms-nav-prev {
+    width: 30px;
+    background: url(img/light-skin-1.png);
+    background-position: -89px -26px;
+    height: 40px;
+    cursor: pointer;
+    top: 50%;
+    left: 30px;
+    margin-top: -20px;
+    position: absolute;
+    z-index: 110;
+}
+.ms-nav-next {
+    right: 30px;
+    left: auto;
+    background-position: -89px -103px;
 }
 .header_top {
 	padding-top: 15px;
@@ -449,6 +477,7 @@ input[type="submit"].search_submit:focus {
 }
 .main_inner {
 	padding-top: 100px;
+	z-index: 1;
 }
 .main_content {
 	text-align: center;
@@ -1265,6 +1294,13 @@ input:checked~.switch-paddle {
 		width: 100%;
 		background-size: cover;
 		background-position: center;
+	}
+	.ms-nav-next, .ms-nav-prev {
+	    left: 0px;
+	}
+	.ms-nav-next {
+	    right: 0;
+	    left: auto;
 	}
 	.burger {
 		height: 100%;

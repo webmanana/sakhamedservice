@@ -172,7 +172,10 @@ jQuery(document).ready(function($) {
 		loop: true,
 		stagePadding: 0,
 		smartSpeed: 450,
-		navText : ['<div class="special__left"></div>','<div class="special__right"></div>'],
-        responsiveClass:true
+		navText : ['<div class="ms-nav-next ms-ctrl-hide"></div>','<div class="ms-nav-prev ms-ctrl-hide"></div>'],
+        responsiveClass:true,
+		animateOut: 'slideOutLeft',
+        mouseDrag: false,
+		lazyLoad:true,
 	})
 });
