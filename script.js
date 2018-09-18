@@ -170,7 +170,6 @@ jQuery(document).ready(function($) {
 		nav: true,
 		dots: false,
 		loop: true,
-		margin: 30,
 		stagePadding: 0,
 		smartSpeed: 450,
 		navText : ['<div class="special__left"></div>','<div class="special__right"></div>'],
