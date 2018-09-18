@@ -34,6 +34,7 @@ $(document).ready(function(){
 		    // instead of a settings object
 		  ]
 	});
+	$('.input-phone').mask("+7 (999) 999-99-99");
 	$('.address_slider').slick({
 		infinite: false,
 		slidesToShow: 3,
