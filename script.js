@@ -164,3 +164,16 @@ $(document).ready(function(){
   $( ".p" ).toggle();
 });
 });
+jQuery(document).ready(function($) {
+  $('.main_slider').owlCarousel({
+		items: 1,
+		nav: true,
+		dots: false,
+		loop: true,
+		margin: 30,
+		stagePadding: 0,
+		smartSpeed: 450,
+		navText : ['<div class="special__left"></div>','<div class="special__right"></div>'],
+        responsiveClass:true
+	})
+});
