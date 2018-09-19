@@ -89,11 +89,11 @@ overflow-y: hidden!important;
 	z-index: 10;
 }
 .slider_desc {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	z-index: 10;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    bottom: 60px;
 }
 .owl-carousel {
 	z-index: unset!important;
