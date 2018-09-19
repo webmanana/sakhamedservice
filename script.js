@@ -5,34 +5,34 @@ $(document).ready(function(){
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		prevArrow: $('.prev'),
-        nextArrow: $('.next'),
+		nextArrow: $('.next'),
 		responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow: 3,
-		        slidesToScroll: 3,
-		        infinite: true
-		      }
-		    },
-		    {
-		      breakpoint: 800,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    }
-		    // You can unslick at a given breakpoint now by adding:
-		    // settings: "unslick"
-		    // instead of a settings object
-		  ]
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					infinite: true
+				}
+			},
+			{
+				breakpoint: 800,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+		]
 	});
 	$('.input-phone').mask("+7 (999) 999-99-99");
 	$('.address_slider').slick({
@@ -40,34 +40,34 @@ $(document).ready(function(){
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		prevArrow: $('.prev1'),
-        nextArrow: $('.next1'),
+		nextArrow: $('.next1'),
 		responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow: 3,
-		        slidesToScroll: 3,
-		        infinite: true
-		      }
-		    },
-		    {
-		      breakpoint: 800,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    }
-		    // You can unslick at a given breakpoint now by adding:
-		    // settings: "unslick"
-		    // instead of a settings object
-		  ]
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					infinite: true
+				}
+			},
+			{
+				breakpoint: 800,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+		]
 	});
 	$('.partners_slider').slick({
 		infinite: false,
@@ -75,107 +75,92 @@ $(document).ready(function(){
 		slidesToScroll: 3,
 		arrows:false,
 		responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow: 3,
-		        slidesToScroll: 3,
-		        infinite: true
-		      }
-		    },
-		    {
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
-		      }
-		    }
-		    // You can unslick at a given breakpoint now by adding:
-		    // settings: "unslick"
-		    // instead of a settings object
-		  ]
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					infinite: true
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			}
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+		]
 	});
 });
 $(document).ready(function(){
 
-  var $nav = $('nav.greedy');
-  var $btn = $('nav.greedy button');
-  var $vlinks = $('nav.greedy .links');
-  var $hlinks = $('nav.greedy .hidden-links');
+	var $nav = $('nav.greedy');
+	var $btn = $('nav.greedy button');
+	var $vlinks = $('nav.greedy .links');
+	var $hlinks = $('nav.greedy .hidden-links');
 
-  var numOfItems = 0;
-  var totalSpace = 0;
-  var breakWidths = [];
+	var numOfItems = 0;
+	var totalSpace = 0;
+	var breakWidths = [];
 
-  // Get initial state
-  $vlinks.children().outerWidth(function(i, w) {
-    totalSpace += w;
-    numOfItems += 1;
-    breakWidths.push(totalSpace);
-  });
+	// Get initial state
+	$vlinks.children().outerWidth(function(i, w) {
+		totalSpace += w;
+		numOfItems += 1;
+		breakWidths.push(totalSpace);
+	});
 
-  var availableSpace, numOfVisibleItems, requiredSpace;
+	var availableSpace, numOfVisibleItems, requiredSpace;
 
-  function check() {
+	function check() {
 
-    // Get instant state
-    availableSpace = $vlinks.width() - 10;
-    numOfVisibleItems = $vlinks.children().length;
-    requiredSpace = breakWidths[numOfVisibleItems - 1];
+		// Get instant state
+		availableSpace = $vlinks.width() - 10;
+		numOfVisibleItems = $vlinks.children().length;
+		requiredSpace = breakWidths[numOfVisibleItems - 1];
 
-    // There is not enought space
-    if (requiredSpace > availableSpace) {
-      $vlinks.children().last().prependTo($hlinks);
-      numOfVisibleItems -= 1;
-      check();
-      // There is more than enough space
-    } else if (availableSpace > breakWidths[numOfVisibleItems]) {
-      $hlinks.children().first().appendTo($vlinks);
-      numOfVisibleItems += 1;
-    }
-    // Update the button accordingly
-    $btn.attr("count", numOfItems - numOfVisibleItems);
-    if (numOfVisibleItems === numOfItems) {
-      $btn.addClass('hidden');
-    } else $btn.removeClass('hidden');
-  }
+		// There is not enought space
+		if (requiredSpace > availableSpace) {
+			$vlinks.children().last().prependTo($hlinks);
+			numOfVisibleItems -= 1;
+			check();
+			// There is more than enough space
+		} else if (availableSpace > breakWidths[numOfVisibleItems]) {
+			$hlinks.children().first().appendTo($vlinks);
+			numOfVisibleItems += 1;
+		}
+		// Update the button accordingly
+		$btn.attr("count", numOfItems - numOfVisibleItems);
+		if (numOfVisibleItems === numOfItems) {
+			$btn.addClass('hidden');
+		} else $btn.removeClass('hidden');
+	}
 
-  // Window listeners
-  $(window).resize(function() {
-    check();
-  });
+	// Window listeners
+	$(window).resize(function() {
+		check();
+	});
 
-  $btn.on('click', function() {
-    $hlinks.toggleClass('hidden');
-  });
+	$btn.on('click', function() {
+		$hlinks.toggleClass('hidden');
+	});
 
-  check();
+	check();
 
 });
 $(document).ready(function(){
 	$( ".toggle-button" ).click(function() {
-  $( ".p" ).toggle();
-});
-});
-jQuery(document).ready(function($) {
-  $('.main_slider').owlCarousel({
-		items: 1,
-		nav: true,
-		dots: false,
-		loop: true,
-		stagePadding: 0,
-		smartSpeed: 450,
-		navText : ['<div class="ms-nav-next ms-ctrl-hide"></div>','<div class="ms-nav-prev ms-ctrl-hide"></div>'],
-        responsiveClass:true,
-		animateOut: 'slideOutLeft',
-        mouseDrag: false,
-		lazyLoad:true,
-	})
+		$( ".p" ).toggle();
+	});
 });
