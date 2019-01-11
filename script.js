@@ -34,7 +34,6 @@ $(document).ready(function(){
 			// instead of a settings object
 		]
 	});
-	$('.input-phone').mask("+7 (999) 999-99-99");
 	$('.address_slider').slick({
 		infinite: false,
 		slidesToShow: 3,
@@ -163,4 +162,20 @@ $(document).ready(function(){
 	$( ".toggle-button" ).click(function() {
 		$( ".p" ).toggle();
 	});
+	$('.main_slider').owlCarousel({
+		items: 1,
+		nav: true,
+		dots: false,
+		loop: true,
+		margin: 0,
+		stagePadding: 0,
+		smartSpeed: 450,
+		navText : ['<div class="ms-nav-next ms-ctrl-hide"></div>','<div class="ms-nav-prev ms-ctrl-hide"></div>'],
+		responsiveClass:true,
+		autoplay: true,
+		autoplayTimeout: 10000,
+		animateOut: 'fadeOut',
+		mouseDrag: false,
+		lazyLoad:true,
+	})
 });
